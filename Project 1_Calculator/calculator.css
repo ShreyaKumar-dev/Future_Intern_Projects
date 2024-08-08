@@ -22,13 +22,14 @@ html, body {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
     background: white;
-    padding: 30px;
+    padding: 40px 30px;
     border-radius: 10px;
+    box-shadow: 0px 0px 8px 0.9px rgba(0, 0, 0, 0.1);
 }
 
 .btn{
     padding: 20px;
-    font-size: 19px;
+    font-size: 17px;
     text-align: center;
     border: none;
     cursor: pointer;
@@ -79,13 +80,17 @@ html, body {
     margin-bottom: 20px;
     text-align: right;
     padding: 15px 10px;
-    font-size: 24px;
+    font-size: 30px;
     border: none;
     border-radius: 5px;
+    color: #393939;
     box-shadow: 1px 1px 4px 0.5px rgba(61, 61, 61, 0.2), -1px 0 .5em rgb(234, 234, 234);
+}
+
+.input::placeholder{
+    color: #393939;
 }
 
 .row .input:focus{
     outline: none;
-    color: #3c3a3a;
 }
