@@ -1,9 +1,6 @@
 # Future Intern Internship Projects
-<br>
-<h1>Project 1: Calculate Me - Web Calculator</h1>
+<h2>Project 1: Calculate Me - Web Calculator</h2>
 <p>Web-based calculator that can perform basic arithmetic operations.</p>
-<br>
 <p>Live at: <a href="https://calculateme-webcalculator.netlify.app/">Calculate Me</a><p>
-<br>
-<img src="./Readme_imgs/Calculate_Me.png" alt="Calculate Me - Web Calculator" height="200px" class="radius-2">
+<img src="./Readme_imgs/Calculate_Me.png" alt="Calculate Me - Web Calculator" height="300px">
 <br><br>
