@@ -1,25 +1,39 @@
 function convertTemperature() {
-    const temperatureInput = document.getElementById('temperatureInput').value;
-    const unitSelect = document.getElementById('unitSelect').value;
-    const errorMessage = document.getElementById('errorMessage');
-    const result = document.getElementById('result');
+    const input = document.getElementById('input').value;
+    const fromUnit = document.getElementById('fromSelect').value;
+    const toUnit = document.getElementById('toSelect').value;
+    const output = document.getElementById('output');
 
-    if (isNaN(temperatureInput) || temperatureInput === '') {
-        errorMessage.textContent = 'Please enter a valid number!';
-        result.textContent = '';
+    // Check if the input is a valid number
+    if (isNaN(input) || input === '') {
+        output.value = 'Invalid input!';
         return;
     }
 
-    errorMessage.textContent = '';
-    let convertedTemperature;
+    let result;
 
-    if (unitSelect === 'C') {
-        convertedTemperature = `${(temperatureInput * 9/5) + 32} °F | ${parseFloat(temperatureInput) + 273.15} K`;
-    } else if (unitSelect === 'F') {
-        convertedTemperature = `${(temperatureInput - 32) * 5/9} °C | ${((temperatureInput - 32) * 5/9) + 273.15} K`;
-    } else if (unitSelect === 'K') {
-        convertedTemperature = `${temperatureInput - 273.15} °C | ${(temperatureInput - 273.15) * 9/5 + 32} °F`;
+    if (fromUnit === toUnit) {
+        result = parseFloat(input);
+    } else if (fromUnit === 'C') {
+        if (toUnit === 'F') {
+            result = (input * 9/5) + 32;
+        } else if (toUnit === 'K') {
+            result = parseFloat(input) + 273.15;
+        }
+    } else if (fromUnit === 'F') {
+        if (toUnit === 'C') {
+            result = (input - 32) * 5/9;
+        } else if (toUnit === 'K') {
+            result = ((input - 32) * 5/9) + 273.15;
+        }
+    } else if (fromUnit === 'K') {
+        if (toUnit === 'C') {
+            result = input - 273.15;
+        } else if (toUnit === 'F') {
+            result = (input - 273.15) * 9/5 + 32;
+        }
     }
 
-    result.textContent = `Converted Temperature: ${convertedTemperature}`;
+    output.value = `${result.toFixed(2)} °${toUnit}`;
 }
+
