@@ -7,6 +7,37 @@
     <title>Temperature Converter</title>
 </head>
 <body>
-    <script src="tempconv.js"></script>
+<div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="Selectors">
+        <div class="from">
+            <label for="fromSelect">From</label>
+            <select id="fromSelect" title="Select Unit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+        </div>
+        <div class="to">
+            <label for="toSelect">To</label>
+            <select id="toSelect" title="Select Unit">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+        </div>
+    </div>
+    <div class="input">
+        <input type="number" id="input" placeholder="Enter Temperature" title="Enter Temperature">
+        <button type="button" class="convert-btn" onclick="convertTemperature()">Convert</button>
+    </div>
+    <div class="result">
+        <label for="output" id="outputLabel">Result</label>
+        <input type="text" id="output" placeholder="Result Temperature" readonly>
+    </div>
+    <!-- <input type="number" id="output" placeholder="Result Temperature" title="Result Temperature"> -->
+</div>
+
+<script src="tempconv.js"></script>
 </body>
 </html>
