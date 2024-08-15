@@ -12,9 +12,11 @@ html, body {
 body {
     font-family: 'Open Sans', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* align-content: center; */
+    height: 100dvh;
     background: linear-gradient(135deg, #4fc3f7, #1e88e5);
     /* background-image: url(./assets/temp_con.jpg); */
     /* background-position: center; */
@@ -29,10 +31,15 @@ body {
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .container>h1{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 select, .convert-btn {
@@ -41,6 +48,15 @@ select, .convert-btn {
     border: none;
     font-size: 16px;
     cursor: pointer;
+    width: 200px;
+}
+
+.convert-btn {
+    background-color: #1e88e5;
+    color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
     width: 100%;
 }
 
@@ -61,14 +77,6 @@ input:focus{
     outline: none;
 }
 
-.convert-btn {
-    background-color: #1e88e5;
-    color: #fff;
-    font-size: 17px;
-    letter-spacing: 1px;
-    transition: background-color 0.3s;
-}
-
 select:focus{
     outline: none;
 }
@@ -86,6 +94,7 @@ select:focus{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-bottom: 10px;
 }
 
 .result>input{
@@ -110,7 +119,10 @@ select:focus{
 }
 
 .Selectors>.from,.to{
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    gap: 8px;
     font-size: 17px;
     letter-spacing: 0.5px;
 }
