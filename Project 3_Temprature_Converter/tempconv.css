@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,7 @@ html, body {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Moderustic", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,8 +27,9 @@ body {
 }
 
 .container {
-    /* background: #ffffff1a; */
-    background: #374955;
+    /* background: #e6f4f1; */
+    background-image: linear-gradient(to right top, #374955ae, #375260ae, #355b6aae, #326473ae, #2d6e7cae);
+    /* background: #374955; */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -48,7 +51,8 @@ select, .convert-btn {
     border: none;
     font-size: 16px;
     cursor: pointer;
-    width: 200px;
+    width: 100%;
+    font-family: "Moderustic", sans-serif;
 }
 
 .convert-btn {
@@ -57,7 +61,6 @@ select, .convert-btn {
     font-size: 17px;
     letter-spacing: 1px;
     transition: background-color 0.3s;
-    width: 100%;
 }
 
 input[type="number"] {
