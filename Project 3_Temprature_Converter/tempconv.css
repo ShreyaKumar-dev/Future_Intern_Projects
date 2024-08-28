@@ -17,13 +17,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* align-content: center; */
     height: 100dvh;
     background: linear-gradient(135deg, #4fc3f7, #1e88e5);
-    /* background-image: url(./assets/temp_con.jpg); */
-    /* background-position: center; */
-    /* background-size: cover; */
-    color: #fff;
 }
 
 .container {
@@ -34,6 +29,7 @@ body {
     text-align: center;
     width: -moz-fit-content;
     width: fit-content;
+    color: #fff;
 }
 
 .container>h1{
@@ -131,5 +127,10 @@ select:focus{
 @media (max-width: 768px) {
     .container {
         width: auto;
+        margin: 0 20px;
+    }
+
+    .container>h1{
+        font-size: 22px;
     }
 }
