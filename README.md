@@ -23,3 +23,28 @@
 </ol>
 <p>Live at : <a href="https://todo-daily-journal.netlify.app/">My To-Do App</a><p><br>
 <img src="./Readme_imgs/My_ToDo_App.png" alt="My To Do Web App" height="300px">
+<br><br>
+<h2>Project 3 : Temperature Converter</h2>
+<p>The Temperature Converter website allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin. Users select the input and output units from dropdown menus, enter a temperature value, and click the "Convert" button to see the result displayed in the output field.</p>
+<p>Key Features: </p>
+<ol>
+    <li>
+        <b>Unit Selection</b>
+        <p>Users can choose the input and output temperature units from the available options (Celsius, Fahrenheit, Kelvin).</p>
+    </li>
+    <li>
+        <b>Temperature Conversion</b>
+        <p>The website performs accurate conversions between the selected units. The conversion logic supports:</p>
+            <ul>
+                <li>Celsius to Fahrenheit and Kelvin</li>
+                <li>Fahrenheit to Celsius and Kelvin</li>
+                <li>Kelvin to Celsius and Fahrenheit</li>
+            </ul>
+        </li>
+    <li>
+        <b>Input Validation</b>
+        <p>The website checks for valid numeric input. If the input is invalid or empty, an error message is displayed.</p>
+    </li>
+</ol>
+<p>Live at : <a href="https://tempconv-app.netlify.app/">Temperature Converter</a><p><br>
+<img src="./Readme_imgs/Temperature Converter.png" alt="Temperature Converter" height="300px">
