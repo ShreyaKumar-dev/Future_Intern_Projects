@@ -27,9 +27,7 @@ body {
 }
 
 .container {
-    /* background: #e6f4f1; */
-    background-image: linear-gradient(to right top, #374955ae, #375260ae, #355b6aae, #326473ae, #2d6e7cae);
-    /* background: #374955; */
+    background: #374955;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
