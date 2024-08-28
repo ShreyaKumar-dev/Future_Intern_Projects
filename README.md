@@ -6,7 +6,6 @@
 <br><br>
 <h2>Project 2 : To - Do Web App</h2>
 <p>My To-Do Web App is a simple and efficient tool for managing tasks. Built with HTML, CSS, and JavaScript, it provides a responsive design that works well on desktops, tablets, and mobile devices.</p>
-<br>
 <p>Key Features: </p>
 <ol>
     <li><b>Task Addition</b>
